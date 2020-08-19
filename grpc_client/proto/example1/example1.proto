@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package example1;
+
+service Example1 {
+    rpc CreateData1(CreateData1Request) returns (CreateData1Response) {}
+    rpc ReadData1(ReadData1Request) returns (ReadData1Response) {}
+}
+
+message CreateData1Request {
+    string header = 1;
+    string data = 2;
+}
+
+message CreateData1Response {
+    string message = 1;
+    int32 code = 2;
+}
+
+message ReadData1Request {
+    string id = 1;
+}
+
+message ReadData1Response {
+    string header = 1;
+    string data = 2;
+    string message = 3;
+    int32 code = 4;
+}
