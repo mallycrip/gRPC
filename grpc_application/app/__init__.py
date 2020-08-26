@@ -11,7 +11,7 @@ def register_servicers(app):
 
 def create_app():
     app = grpc.server(futures.ThreadPoolExecutor(max_workers=DevLevelConfig.worker_node))
-    app.add_insecure_port("localhost:50051")
+    app.add_insecure_port(DevLevelConfig._address)
 
     register_servicers(app)
     return app
