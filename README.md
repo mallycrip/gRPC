@@ -1,2 +1,1 @@
-# gRPC_Application_Example
-Example for gRPC Application
+# v1-outing-service

@@ -1,0 +1,92 @@
+syntax = "proto3";
+
+service OutingStudent {
+    rpc CreateOuting(OutingStudentRequest) returns (OutingStudentResponse) {}
+    rpc GetStudentOutings(GetStudentOutingsRequest) returns (GetStudentOutingsResponse) {}
+    rpc GetOutingInform(GetOutingInformRequest) returns (GetOutingInformResponse) {}
+    rpc GetCardAboutOuting(GetCardAboutOutingRequest) returns (GetCardAboutOutingResponse) {}
+}
+
+message OutingStudentRequest {
+    string uuid = 1;
+    string date = 2;
+    int64 start_time = 3;
+    int64 end_time = 4;
+    string place = 5;
+    string reason = 6;
+    string situation = 7;
+}
+
+message OutingStudentResponse {
+    int32 status = 1;
+    int32 code = 2;
+    string msg = 3;
+    string oid = 4;
+
+}
+
+message GetStudentOutingsRequest {
+    string uuid = 1;
+    string sid = 2;
+    int32 start = 3;
+    int32 count = 4;
+}
+
+message GetStudentOutingsResponse {
+    int32 status = 1;
+    int32 code = 2;
+    string msg = 3;
+    repeated Outing outing = 4;
+}
+
+message Outing {
+    string place = 1;
+    string reason = 2;
+    string date = 3;
+    int64 start_time = 4;
+    int64 end_time = 5;
+    string situation = 6;
+    string status = 7;
+}
+
+message GetOutingInformRequest {
+    string uuid = 1;
+    string oid = 2;
+}
+
+message GetOutingInformResponse {
+    int32 status = 1;
+    int32 code = 2;
+    string msg = 3;
+    
+    string place = 4;
+    string reason = 5;
+    string date = 6;
+    int64 start_time = 7;
+    int64 end_time = 8;
+    string o_situation = 9;
+    string o_status = 10;
+}
+
+message GetCardAboutOutingRequest {
+    string uuid = 1;
+    string oid = 2;
+}
+
+message GetCardAboutOutingResponse {
+    int32 status = 1;
+    int32 code = 2;
+    string msg = 3;
+    
+    string place = 4;
+    string date = 5;
+    int64 start_time = 6;
+    int64 end_time = 7;
+    string o_status = 8;
+    
+    string name = 9;
+    int32 grade = 10;
+    int32 class = 11;
+    int32 number = 12;
+    string image_url = 13;
+}
