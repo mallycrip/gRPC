@@ -3,10 +3,11 @@
 ## Useful Tools
 - [BloomRPC](https://github.com/uw-labs/bloomrpc)
 ## Example 
+- [모든 예제](https://github.com/grpc/grpc/tree/master/examples)
 ### Python
 - [gRPC 공식 사이트](https://grpc.io/docs/languages/python/quickstart/)
 - [Opentracing for Python gRPC](https://github.com/opentracing-contrib/python-grpc)
-- []
+- [Metadata 보내기](https://stackoverflow.com/a/45072182)
 ### Java
 - [grpc/grpc-java](https://github.com/grpc/grpc-java)
 - [gRPC Example](https://github.com/saturnism/grpc-by-example-java)
