@@ -1,5 +1,8 @@
 # gRPC
 내가 보고 쓰려고 gRPC 자료 모아놓은곳
+## What is gRPC?
+- [뱅크샐러드에서 잘 정리해주신 자료](https://blog.banksalad.com/tech/production-ready-grpc-in-golang/?gclid=Cj0KCQjw5eX7BRDQARIsAMhYLP_45j25tlOKE5ziIJLPA22N4OWqtTWGTEreZsDoCrPUUVs7OSXxmsIaAvchEALw_wcB)
+- [gRPC vs HTTP](https://docs.microsoft.com/ko-kr/aspnet/core/grpc/comparison?view=aspnetcore-3.1)
 ## Useful Tools
 - [BloomRPC](https://github.com/uw-labs/bloomrpc)
 ## Example 
